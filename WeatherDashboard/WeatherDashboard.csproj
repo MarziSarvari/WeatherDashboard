@@ -10,10 +10,10 @@
 
   <ItemGroup>
     <None Update="Data\cities.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Data\userSetting.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="img\cloudy_icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -26,10 +26,7 @@
     </None>
     <None Update="img\rainy_icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="img\rainy_icon1.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </None>    
     <None Update="img\snowy_icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

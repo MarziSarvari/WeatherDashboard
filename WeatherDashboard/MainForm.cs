@@ -17,7 +17,7 @@ namespace WeatherDashboard
         {
             { "Cloudy", "img/cloudy_icon.png" },
             { "Partly", "img/partlycloudy_icon.png" },
-            { "Rainy", "img/rainy_icon1.png" },
+            { "Rainy", "img/rainy_icon.png" },
             { "Snowy", "img/snowy_icon.png" },
             { "Sunny", "img/sunny_icon.png" },
             { "Windy", "img/partlycloudy_icon.png" },
