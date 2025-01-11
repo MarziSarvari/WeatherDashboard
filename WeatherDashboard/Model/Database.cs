@@ -21,9 +21,6 @@ namespace WeatherDashboard.Model
             }
 
             UserSetting = DataSerializer.Deserialize<UserSetting>("userSetting.xml");
-
-
-
         }
 
         public static void SaveSetting()

@@ -53,19 +53,14 @@ namespace WeatherDashboard
         private void SetupDataGridView()
         {
             dgvPreferred.RowHeadersVisible = false;
-            dgvPreferred.DefaultCellStyle.BackColor = Color.FromArgb(32, 43, 59);
-            dgvPreferred.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(32, 43, 59);
-            dgvPreferred.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-
+            dgvPreferred.DefaultCellStyle.BackColor = Color.FromArgb(32, 43, 59);       
             dgvPreferred.ColumnHeadersDefaultCellStyle.Font = new Font(dgvPreferred.Font, FontStyle.Bold);
             dgvPreferred.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvPreferred.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(32, 43, 59);
             dgvPreferred.RowHeadersDefaultCellStyle.ForeColor = Color.White;
             dgvPreferred.DefaultCellStyle.ForeColor = Color.White;
-
             dgvPreferred.GridColor = Color.FromArgb(32, 43, 59);
             dgvPreferred.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
 
             dgvPreferred.Columns.Add("CityName", "City Name");
             dgvPreferred.Columns.Add("Temperature", "Temperature");
@@ -232,5 +227,6 @@ namespace WeatherDashboard
             }
 
         }
+
     }
 }

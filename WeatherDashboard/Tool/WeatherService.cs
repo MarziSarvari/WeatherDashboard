@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WeatherDashboard.Model;
+﻿using WeatherDashboard.Model;
 
 namespace WeatherDashboard.Tool
 {
@@ -37,7 +32,7 @@ namespace WeatherDashboard.Tool
             int newTemperature = Clamp(previousHour.Temperature + Random.Next(-2, 3), -10, 40);
 
             // Determine if the weather condition changes
-            WeatherCondition newCondition = GetUpdatedCondition(previousHour.Condition);
+            WeatherCondition newCondition = GetUpdatedCondition(newTemperature);
 
             return new WeatherData
             {
@@ -46,26 +41,19 @@ namespace WeatherDashboard.Tool
             };
         }
 
-        private static WeatherCondition GetUpdatedCondition(WeatherCondition currentCondition)
+        private static WeatherCondition GetUpdatedCondition(int newTemperature)
         {
-            WeatherCondition[] conditions =
-    {
-        WeatherCondition.Sunny,
-        WeatherCondition.Rainy,
-        WeatherCondition.Cloudy,
-        WeatherCondition.Partly,
-        WeatherCondition.Windy,
-        WeatherCondition.Snowy
-    };
-
-            // Give a small chance of condition changing
-            if (Random.Next(100) < 20)
+            // Determine the base weather condition based on temperature
+            WeatherCondition newCondition = newTemperature switch
             {
-                var newCondition = conditions[Random.Next(conditions.Length)];
-                return newCondition;
-            }
+                < 0 => WeatherCondition.Snowy,
+                < 10 => Random.Next(100) < 20 ? WeatherCondition.Rainy : WeatherCondition.Cloudy, // 20% chance of Rainy
+                < 20 => Random.Next(100) < 20 ? WeatherCondition.Rainy : WeatherCondition.Partly, // 20% chance of Rainy
+                < 30 => WeatherCondition.Sunny,
+                _ => WeatherCondition.Windy,
+            };
 
-            return currentCondition;
+            return newCondition;
         }
 
         private static int Clamp(int value, int min, int max)
