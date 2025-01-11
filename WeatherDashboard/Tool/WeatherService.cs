@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WeatherDashboard.Model;
 
-namespace WeatherDashboard
+namespace WeatherDashboard.Tool
 {
 
     public static class WeatherService
@@ -29,7 +29,7 @@ namespace WeatherDashboard
         }
 
         public static double ConvertToFahrenheit(double celsius) =>
-           (celsius * 9 / 5) + 32;
+           celsius * 9 / 5 + 32;
 
         private static WeatherData GenerateNextHourForecast(WeatherData previousHour)
         {
@@ -41,8 +41,8 @@ namespace WeatherDashboard
 
             return new WeatherData
             {
-                Temperature = newTemperature,                
-                Condition = newCondition,                
+                Temperature = newTemperature,
+                Condition = newCondition,
             };
         }
 

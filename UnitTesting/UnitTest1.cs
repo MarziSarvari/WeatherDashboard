@@ -1,16 +1,14 @@
+using Xunit;
+using Moq;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+//using WeatherDashboard;
+
 namespace UnitTesting
 {
-    public class Tests
+    public class MainFormTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
-        [Test]
-        public void Test1()
-        {
-            Assert.Pass();
-        }
+        
     }
 }

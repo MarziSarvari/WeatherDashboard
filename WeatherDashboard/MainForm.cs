@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
 using WeatherDashboard.Model;
+using WeatherDashboard.Tool;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WeatherDashboard

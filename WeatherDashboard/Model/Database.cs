@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using WeatherDashboard.Model;
+using WeatherDashboard.Tool;
 
 namespace WeatherDashboard.Model
 {

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace WeatherDashboard
+namespace WeatherDashboard.Tool
 {
     public static class DataSerializer
     {
