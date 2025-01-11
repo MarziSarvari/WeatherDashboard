@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DefaultTemperatureUnit>Celsius</DefaultTemperatureUnit>
+  <PreferredCities>
+    <string>Prague</string>
+    <string>Berlin</string>
+    <string>Los Angeles</string>
+    <string>Vancouver</string>
+    <string>Sydney</string>
+    <string>Amsterdam</string>
+    <string>Brussels</string>
+  </PreferredCities>
+</UserSetting>
