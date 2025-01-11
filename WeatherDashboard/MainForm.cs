@@ -30,6 +30,7 @@ namespace WeatherDashboard
         public MainForm()
         {
             InitializeComponent();
+            InitializePictureBoxes();
             SetupDataGridView();
 
             _preferredCities =
@@ -50,6 +51,16 @@ namespace WeatherDashboard
 
 
         }
+
+        private void InitializePictureBoxes()
+        {
+            pictureBoxReal.Image = Image.FromFile("img/temperature_icon.png");
+            pictureBoxUv.Image = Image.FromFile("img/Sun_icon.png");
+            pictureBoxChance.Image = Image.FromFile("img/drop_water_icon.png");
+            pictureBoxWind.Image = Image.FromFile("img/wind_icon.png");
+
+        }
+
         private void SetupDataGridView()
         {
             dgvPreferred.RowHeadersVisible = false;

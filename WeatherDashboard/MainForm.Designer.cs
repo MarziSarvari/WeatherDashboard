@@ -7,8 +7,8 @@
 
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             btnToggleUnit = new Button();
             comboCity = new ComboBox();
             pictureBoxWeatherIcon = new PictureBox();
@@ -42,12 +42,12 @@
             lblChanceRain = new Label();
             lblWind = new Label();
             lblRealFeel = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            pictureBoxUv = new PictureBox();
+            pictureBoxWind = new PictureBox();
             label6 = new Label();
             label7 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            pictureBoxChance = new PictureBox();
+            pictureBoxReal = new PictureBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -66,10 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)picBoxHour2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBoxHour1).BeginInit();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxUv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxWind).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxChance).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxReal).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPreferred).BeginInit();
             SuspendLayout();
@@ -377,12 +377,12 @@
             panel4.Controls.Add(lblChanceRain);
             panel4.Controls.Add(lblWind);
             panel4.Controls.Add(lblRealFeel);
-            panel4.Controls.Add(pictureBox3);
-            panel4.Controls.Add(pictureBox4);
+            panel4.Controls.Add(pictureBoxUv);
+            panel4.Controls.Add(pictureBoxWind);
             panel4.Controls.Add(label6);
             panel4.Controls.Add(label7);
-            panel4.Controls.Add(pictureBox2);
-            panel4.Controls.Add(pictureBox1);
+            panel4.Controls.Add(pictureBoxChance);
+            panel4.Controls.Add(pictureBoxReal);
             panel4.Controls.Add(btnToggleUnit);
             panel4.Controls.Add(label5);
             panel4.Controls.Add(label4);
@@ -432,25 +432,23 @@
             lblRealFeel.Size = new Size(0, 21);
             lblRealFeel.TabIndex = 10;
             // 
-            // pictureBox3
+            // pictureBoxUv
             // 
-            pictureBox3.Image = Properties.Resources.sun_icon;
-            pictureBox3.Location = new Point(266, 82);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(18, 18);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 9;
-            pictureBox3.TabStop = false;
+            pictureBoxUv.Location = new Point(266, 82);
+            pictureBoxUv.Name = "pictureBoxUv";
+            pictureBoxUv.Size = new Size(18, 18);
+            pictureBoxUv.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxUv.TabIndex = 9;
+            pictureBoxUv.TabStop = false;
             // 
-            // pictureBox4
+            // pictureBoxWind
             // 
-            pictureBox4.Image = Properties.Resources.wind_icon;
-            pictureBox4.Location = new Point(266, 38);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(18, 18);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 8;
-            pictureBox4.TabStop = false;
+            pictureBoxWind.Location = new Point(266, 38);
+            pictureBoxWind.Name = "pictureBoxWind";
+            pictureBoxWind.Size = new Size(18, 18);
+            pictureBoxWind.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxWind.TabIndex = 8;
+            pictureBoxWind.TabStop = false;
             // 
             // label6
             // 
@@ -474,25 +472,23 @@
             label7.TabIndex = 6;
             label7.Text = "Wind";
             // 
-            // pictureBox2
+            // pictureBoxChance
             // 
-            pictureBox2.Image = Properties.Resources.drop_water_icon;
-            pictureBox2.Location = new Point(12, 82);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(18, 18);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
+            pictureBoxChance.Location = new Point(12, 82);
+            pictureBoxChance.Name = "pictureBoxChance";
+            pictureBoxChance.Size = new Size(18, 18);
+            pictureBoxChance.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxChance.TabIndex = 5;
+            pictureBoxChance.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxReal
             // 
-            pictureBox1.Image = Properties.Resources.temperature_icon;
-            pictureBox1.Location = new Point(12, 38);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(18, 18);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            pictureBoxReal.Location = new Point(12, 38);
+            pictureBoxReal.Name = "pictureBoxReal";
+            pictureBoxReal.Size = new Size(18, 18);
+            pictureBoxReal.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxReal.TabIndex = 4;
+            pictureBoxReal.TabStop = false;
             // 
             // label5
             // 
@@ -580,16 +576,16 @@
             dgvPreferred.Name = "dgvPreferred";
             dgvPreferred.ReadOnly = true;
             dgvPreferred.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(32, 43, 59);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvPreferred.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(32, 43, 59);
-            dgvPreferred.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(32, 43, 59);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvPreferred.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(32, 43, 59);
+            dgvPreferred.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvPreferred.Size = new Size(302, 367);
             dgvPreferred.TabIndex = 0;
             dgvPreferred.CellContentClick += dgvPreferred_CellContentClick;
@@ -638,10 +634,10 @@
             ((System.ComponentModel.ISupportInitialize)picBoxHour1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxUv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxWind).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxChance).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxReal).EndInit();
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvPreferred).EndInit();
             ResumeLayout(false);
@@ -662,10 +658,10 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
+        private PictureBox pictureBoxReal;
+        private PictureBox pictureBoxChance;
+        private PictureBox pictureBoxUv;
+        private PictureBox pictureBoxWind;
         private Label label6;
         private Label label7;
         private Label lblWind;

@@ -14,18 +14,18 @@ namespace WeatherDashboard.Model
         static Database()
         {
             // Load data from XML using DataAccess
-            Cities = DataSerializer.Deserialize<List<City>>("cities.xml");
+            Cities = DataSerializer.Deserialize<List<City>>("Data/cities.xml");
             foreach (City city in Cities)
             {
                   city.Forcastfor6Hours = WeatherService.Generate6HourForecast(city.CurrentWeather);
             }
 
-            UserSetting = DataSerializer.Deserialize<UserSetting>("userSetting.xml");
+            UserSetting = DataSerializer.Deserialize<UserSetting>("Data/userSetting.xml");
         }
 
         public static void SaveSetting()
         {
-            DataSerializer.Serialize(UserSetting, "userSetting.xml");
+            DataSerializer.Serialize(UserSetting, "Data/userSetting.xml");
         }
     }
 }
